@@ -1,0 +1,140 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #eef2f7;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        header {
+            background-color: #007acc;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2rem;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #005a99;
+            padding: 10px 0;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1rem;
+            padding: 8px 16px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+        nav a:hover {
+            background-color: white;
+            color: #005a99;
+            border: 2px solid #005a99;
+        }
+        .back-arrow {
+            display: flex;
+            align-items: center;
+            margin: 20px;
+            font-size: 1.2rem;
+        }
+        .back-arrow a {
+            text-decoration: none;
+            color: #007acc;
+            font-weight: bold;
+        }
+        .back-arrow i {
+            margin-right: 8px;
+        }
+        .box {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 30px;
+            background-color: #ffffff;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            border-radius: 12px;
+            transition: transform 0.2s;
+        }
+        .box:hover {
+            transform: scale(1.01);
+        }
+        h2 {
+            color: #34495e;
+            font-size: 1.2em;
+            margin-bottom: 10px;
+            border-left: 5px solid #3498db;
+            padding-left: 10px;
+        }
+        p {
+            color: #555;
+            font-size: 1.1em;
+            line-height: 1.8;
+            margin: 10px 0;
+        }
+        .container {
+            margin-bottom: 30px;
+            padding: 15px 20px;
+            border-left: 4px solid #3498db;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+        }
+        .container h2 {
+            margin-top: 0;
+        }
+        .container p {
+            margin-bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Mapping Business Use Cases to SDG 11</h1>
+    </header>
+    <nav>
+        <a href="usecase1.html">Congestion Prediction</a>
+        <a href="usecase2.html">Emergency Veichle Rooting</a>
+    </nav>
+    
+    <div class="back-arrow">
+        <a href="../index.html"><i>&larr;</i> Back to Home</a>
+    </div>
+    
+    <div class="box">
+        <div class="container" id="congestion">
+            <h1>Congestion Prediction</h1>
+            <p><b>Use:</b>To anticipate and mitigate traffic jams</p>
+            <p><b>SDG 11.2:</b> Provide access to safe, affordable, accessible, and sustainable transport systems for all, improving road safety, notably by expanding public transport, with special attention to the needs of those in vulnerable situations, women, children, persons with disabilities, and older persons.</p>
+            <p>Traffic congestion significantly impacts urban areas, resulting in delays, excessive fuel consumption, and increased environmental pollution. By predicting congestion patterns, cities can proactively manage traffic flow, improve commuter experiences, and reduce environmental impact.</p>
+            <p><b>Indicator 11.2.1:</b> Proportion of population that has convenient access to public transport, by sex, age, and persons with disabilities.</p>
+            <p>The primary objective of this use case is to leverage data analysis and predictive algorithms to forecast congestion hotspots. Predictive models, such as machine learning approaches, can analyze historical traffic data, weather conditions, and events to anticipate traffic buildup. Implementing strategies based on congestion predictions allows for adaptive signal control, dynamic rerouting, and better infrastructure planning, leading to smoother traffic flow and improved urban mobility.</p>
+        </div>
+    </div>
+    
+    <div class="box">
+     <div class="container" id="emergency-routing">
+         <h1>Emergency Vehicle Routing</h1>
+         <p><b>Use:</b>To ensure emergency veichles reach the destination quickly</p>
+         <p><b>SDG 11.2:</b> Provide access to safe, affordable, accessible, and sustainable transport systems for all, improving road safety, notably by expanding public transport, with special attention to the needs of those in vulnerable situations, women, children, persons with disabilities, and older persons.</p>
+         <p>Emergency response time is critical in saving lives and minimizing damage during crises. Efficient emergency vehicle routing ensures that ambulances, fire trucks, and other emergency services can reach their destinations as quickly as possible.</p>
+         <p><b>Indicator 11.2.1:</b> Proportion of population that has convenient access to public transport, by sex, age, and persons with disabilities.</p>
+         <p>To achieve optimal routing, algorithms such as Dijkstra's or A* can be utilized to find the shortest and fastest paths in real-time. These methods take into account dynamic factors like traffic conditions, road closures, and accidents. Furthermore, integrating IoT devices and real-time traffic data enables adaptive routing, allowing emergency vehicles to bypass congested areas and reach their destinations efficiently.</p>
+     </div>
+   </div>
+ </div>
+</body>
+</html>
