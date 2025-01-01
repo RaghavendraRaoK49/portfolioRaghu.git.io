@@ -1,25 +1,24 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Congetsion Prediction</title>
+    <title>Emergency Veichle Routing</title>
     <style>
         body {
             font-family: 'Roboto', sans-serif;
-            background-color: #f4f4f9;
+            background-color: #f0f4f8; /* Light background for a clean, professional look */
             margin: 0;
             padding: 0;
-            color: #34495e;
+            color: #333;
             line-height: 1.6;
         }
         header {
-            background-color: #007acc;
+            background-color: #003366; /* Dark blue for a professional header */
             color: white;
-            padding: 20px 0;
+            padding: 15px 0;
             text-align: center;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
             position: sticky;
             top: 0;
             z-index: 1000;
@@ -27,17 +26,19 @@
         header h1 {
             margin: 0;
             font-size: 2rem;
+            font-weight: 600;
         }
         h2, h3 {
-            color: #2c3e50;
+            color: #003366; /* Matching blue color for subheadings */
         }
         h2 {
-            margin-top: 30px;
-            font-size: 28px;
+            margin-top: 40px;
+            font-size: 32px;
         }
         p {
             font-size: 16px;
             margin-bottom: 16px;
+            color: #555; /* Slightly muted text for readability */
         }
         ul {
             list-style-type: none;
@@ -50,78 +51,78 @@
         nav {
             display: flex;
             justify-content: center;
-            background-color: #005a99;
-            padding: 10px 0;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            background-color: #005b8c; /* Lighter blue for the navbar */
+            padding: 12px 0;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
         }
         nav a {
             color: white;
             text-decoration: none;
-            margin: 0 15px;
-            font-size: 1rem;
-            padding: 8px 16px;
-            border-radius: 5px;
+            margin: 0 20px;
+            font-size: 1.1rem;
+            padding: 10px 20px;
+            border-radius: 6px;
             transition: background-color 0.3s ease, color 0.3s ease;
         }
         nav a:hover {
             background-color: white;
-            color: #005a99;
-            border: 2px solid #005a99;
+            color: #005b8c;
+            border: 2px solid #005b8c;
         }
         .problem-space a  {
             display: inline-block;
             text-decoration: none;
-            font-size: 1rem;
-            color: #0056b3;
-            background-color: #f0f8ff;
-            padding: 10px 15px;
-            border: 1px solid #0056b3;
-            border-radius: 5px;
+            font-size: 1.1rem;
+            color: #003366;
+            background-color: #e7f3f9;
+            padding: 12px 18px;
+            border: 1px solid #003366;
+            border-radius: 6px;
             transition: background-color 0.3s, color 0.3s;
         }
-        
         .problem-space a:hover {
-            background-color: #0056b3;
-            color: #ffffff;
+            background-color: #003366;
+            color: white;
         }
         .back-arrow {
             display: flex;
             align-items: center;
-            margin: 20px;
+            margin: 30px;
             font-size: 1.2rem;
         }
         .back-arrow a {
             text-decoration: none;
-            color: #007acc;
+            color: #003366;
             font-weight: bold;
         }
         .back-arrow i {
             margin-right: 8px;
         }
         section {
-            padding: 80px 20px 20px 20px;
+            padding: 100px 20px 20px 20px;
             max-width: 1200px;
             margin: 0 auto;
         }
         .content {
             background-color: #ffffff;
             border-radius: 8px;
-            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-            padding: 20px;
+            box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.1);
+            padding: 30px;
             margin-bottom: 40px;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
         .content:hover {
             transform: translateY(-5px);
-            box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.15);
+            box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
         }
         .section-title {
-            background-color: #ecf0f1;
-            padding: 10px 15px;
+            background-color: #ecf3f7; /* Soft blue background for titles */
+            padding: 12px 20px;
             font-weight: bold;
-            font-size: 18px;
+            font-size: 20px;
             margin-bottom: 15px;
             border-radius: 5px;
+            color: #003366;
         }
     </style>
 </head>
