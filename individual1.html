@@ -1,25 +1,24 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Congetsion Prediction</title>
+    <title>Congestion Prediction</title>
     <style>
         body {
             font-family: 'Roboto', sans-serif;
-            background-color: #f4f4f9;
+            background-color: #f0f4f8; /* Light background for a clean, professional look */
             margin: 0;
             padding: 0;
-            color: #34495e;
+            color: #333;
             line-height: 1.6;
         }
         header {
-            background-color: #007acc;
+            background-color: #003366; /* Dark blue for a professional header */
             color: white;
-            padding: 20px 0;
+            padding: 15px 0;
             text-align: center;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
             position: sticky;
             top: 0;
             z-index: 1000;
@@ -27,17 +26,19 @@
         header h1 {
             margin: 0;
             font-size: 2rem;
+            font-weight: 600;
         }
         h2, h3 {
-            color: #2c3e50;
+            color: #003366; /* Matching blue color for subheadings */
         }
         h2 {
-            margin-top: 30px;
-            font-size: 28px;
+            margin-top: 40px;
+            font-size: 32px;
         }
         p {
             font-size: 16px;
             margin-bottom: 16px;
+            color: #555; /* Slightly muted text for readability */
         }
         ul {
             list-style-type: none;
@@ -50,243 +51,243 @@
         nav {
             display: flex;
             justify-content: center;
-            background-color: #005a99;
-            padding: 10px 0;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            background-color: #005b8c; /* Lighter blue for the navbar */
+            padding: 12px 0;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
         }
         nav a {
             color: white;
             text-decoration: none;
-            margin: 0 15px;
-            font-size: 1rem;
-            padding: 8px 16px;
-            border-radius: 5px;
+            margin: 0 20px;
+            font-size: 1.1rem;
+            padding: 10px 20px;
+            border-radius: 6px;
             transition: background-color 0.3s ease, color 0.3s ease;
         }
         nav a:hover {
             background-color: white;
-            color: #005a99;
-            border: 2px solid #005a99;
+            color: #005b8c;
+            border: 2px solid #005b8c;
         }
         .problem-space a  {
             display: inline-block;
             text-decoration: none;
-            font-size: 1rem;
-            color: #0056b3;
-            background-color: #f0f8ff;
-            padding: 10px 15px;
-            border: 1px solid #0056b3;
-            border-radius: 5px;
+            font-size: 1.1rem;
+            color: #003366;
+            background-color: #e7f3f9;
+            padding: 12px 18px;
+            border: 1px solid #003366;
+            border-radius: 6px;
             transition: background-color 0.3s, color 0.3s;
         }
-        
         .problem-space a:hover {
-            background-color: #0056b3;
-            color: #ffffff;
+            background-color: #003366;
+            color: white;
         }
         .back-arrow {
             display: flex;
             align-items: center;
-            margin: 20px;
+            margin: 30px;
             font-size: 1.2rem;
         }
         .back-arrow a {
             text-decoration: none;
-            color: #007acc;
+            color: #003366;
             font-weight: bold;
         }
         .back-arrow i {
             margin-right: 8px;
         }
         section {
-            padding: 80px 20px 20px 20px;
+            padding: 100px 20px 20px 20px;
             max-width: 1200px;
             margin: 0 auto;
         }
         .content {
             background-color: #ffffff;
             border-radius: 8px;
-            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-            padding: 20px;
+            box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.1);
+            padding: 30px;
             margin-bottom: 40px;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
         .content:hover {
             transform: translateY(-5px);
-            box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.15);
+            box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
         }
         .section-title {
-            background-color: #ecf0f1;
-            padding: 10px 15px;
+            background-color: #ecf3f7; /* Soft blue background for titles */
+            padding: 12px 20px;
             font-weight: bold;
-            font-size: 18px;
+            font-size: 20px;
             margin-bottom: 15px;
             border-radius: 5px;
+            color: #003366;
         }
     </style>
 </head>
 <body>
-<header>
-    <h1>Congestion Prediction</h1>
-</header>
-    <nav>
-        <a href="topic.html">Introduction</a>
-        <a href="individual2.html">Emergency-routing</a>
-    </nav>
-    
-    <div class="back-arrow">
-        <a href="index.html"><i>&larr;</i> Back to Home</a>
-    </div>
-    
-    <div class="content">
-        <h2>Why Addressing Congestion Prediction Is Necessary</h2>
-        <p>Congestion prediction plays a vital role in making smart cities more livable and efficient. By anticipating traffic jams before they happen, city planners and traffic systems can take proactive steps to keep things moving smoothly. Using advanced tools like machine learning and real-time data analysis, these predictions help commuters save time, reduce stress, and find better routes. They also contribute to a cleaner environment by cutting down on emissions caused by idling vehicles. In the bigger picture, congestion prediction paves the way for smarter transportation solutions, like self-driving cars and connected systems, making cities ready for the future.</p>
-    </div>
-
-    <div class="content">
-        <h2>Problems Arising Without Efficiect Congetsion Prediction</h2>
-        <ul>
-            <li><strong>Traffic Congestion:</strong> It wastes valuable time for commuters, delays the transport of goods, and leads to higher fuel consumption, economic losses, and increased carbon emissions.</li>
-            <li><strong>Higher Accident Rates:</strong> Poor traffic management makes accidents more likely to happen, especially at busy intersections or during rush hours.</li>
-            <li><strong>Emergency Delays:</strong> Emergency response times for ambulances, fire trucks, and police are affected when they get stuck in traffic.</li>
-            <li><strong>Environmental Impact:</strong> Congestion means more emissions from vehicles, which worsens air pollution and contributes to climate change.</li>
-            <li><strong>Reduced Urban Livability:</strong> Persistent traffic problems make a city less appealing to live, work, or invest in.</li>
-        </ul>
-    </div>
-
-    <div class="content">
-        <h2>Other Problems Solved If Addressed</h2>
-        <ul>
-            <li><strong>Pollution Control:</strong> Reduced idle times result in lower emissions of CO₂, NOx, and particulate matter.</li>
-            <li><strong>Fuel Efficiency:</strong> Optimized traffic flow improves fuel consumption by reducing stop-and-go driving.</li>
-            <li><strong>Urban Planning:</strong> Real-time traffic data can inform the design of better roads, parking spaces, and public transport integration.</li>
-            <li><strong>Improved Public Transport Usage:</strong>Congetsion management leads to delay of buses, trains, and trams, encouraging the use of public transportation.</li>
-            <li><strong>Smart City Integration:</strong> Traffic management systems can be integrated with other smart city features like smart parking, IoT-enabled streetlights, and predictive policing.</li>
-        </ul>
-    </div>
-
-    <div class="content">
-        <h2>Algorithms to Congetsion Prediction</h2>
-        <p>Several advanced algorithms can optimize Congestion Prediction, and each has distinct applications. These include:</p>
-        <ul>
-            <li><strong>Dijsktra's Algorithm</strong></li>
-            <li><strong>Efficiency Analysis (Time and Space Complexities)</strong></li>
-            <li><strong>Optimization and NP-Hard Problems</strong></li>
-            <li><strong>Sorting Algorithms (QuickSort, MergeSort, HeapSort)</strong></li>
-        </ul>
-    </div>
-
-    <div class="content">
-        <h2>Dijkstra’s Algorithm in Conjestion Prediction</h2>
-        <p>Dijkstra’s Algorithm is an essential tool used to find the shortest path between nodes in a graph, which can represent intersections and roads in a city’s traffic network. It calculates the most efficient route for vehicles to minimize travel time and traffic congestion, adapting dynamically based on real-time conditions such as traffic volume, accidents, or road closures.</p>
-
-        <h3>Applications of Dijkstra’s Algorithm in Congetsion Prediction</h3>
-
-        <div class="section-title">1. Real-Time Route Optimization for Vehicles</div>
-        <p><strong>Purpose:</strong> Help drivers find the most efficient route to their destination.</p>
-        <p><strong>How it Works:</strong></p>
-        <ul>
-            <li>Dijkstra's algorithm can be used to find the shortest path for vehicles in real-time, considering current traffic conditions. By dynamically adjusting the edge weights (e.g., travel times or congestion levels) based on real-time data, Dijkstra's algorithm can recommend optimal routes to avoid congested areas.</li>
-            <li><strong>Exmple:</strong> If there's an accident or traffic jam on a particular road, Dijkstra’s algorithm can find an alternate route with the least congestion.</li>
-        </ul>
-        <p><strong>Advantages:</strong> Reduces travel time, lowers traffic congestion, and improves overall traffic flow.</p>
-
-        <div class="section-title">2.Traffic Flow Prediction and Simulation</div>
-        <p><strong>Purpose:</strong> Forecast the areas that are likely to become congested and calculate the optimial routes before the congestion peaks</p>
-        <p><strong>How it Works:</strong></p>
-        <ul>
-            <li>Dijkstra’s algorithm can be integrated with predictive models to forecast future congestion levels. By analyzing historical traffic data and using machine learning techniques to predict future congestion, Dijkstra’s algorithm can adjust road segment weights to simulate how congestion will evolve over time.</li>
-            <li><strong>Example:</strong>By using traffic prediction models, the algorithm can forecast areas likely to become congested and calculate the optimal routes before the congestion peaks.</li>
-        </ul>
-    
-        <div class="section-title">3.Adaptive Traffic Signal Control</div>
-        <p><strong>Purpose:</strong> Optimize traffic light timings to ensure smooth flow at intersections.</p>
-        <p><strong>How it Works:</strong></p>
-        <ul>
-            <li>Dijkstra’s algorithm can help optimize traffic signal timings based on real-time traffic data. By calculating the shortest path for vehicles, the algorithm can adjust traffic light cycles to reduce waiting times and improve traffic flow in congested areas</li>
-            <li><strong>Example:</strong>In a busy intersection, if traffic is detected to be heavy in a specific direction, Dijkstra’s algorithm can suggest adjustments to the signal timing to prioritize the flow of traffic on that path.</li>
-        </ul>
-    </div>
-
-    <div class="content">
-        <h2>How Dijkstra's Algorithm Works (Code Example)</h2>
-        <p>
-            The provided C++ code implements Dijkstra's algorithm to find the shortest paths between buildings in a city.
-
-            <div class="problem-space">
-            <a href="https://github.com/RaghavendraRaoK49/portfolioRaghu.git.io/blob/main/C%2B%2B.cpp" target="_blank">View the code here</a>. 
-            </div>
+    <header>
+        <h1>Congestion Prediction</h1>
+    </header>
+        <nav>
+            <a href="topic.html">Introduction</a>
+            <a href="individual2.html">Emergency-routing</a>
+        </nav>
         
-        </p>
-        <p>
-            <strong>Key Steps:</strong>
-            <ol>
-                <li>Initialization:
-                    <ul>
-                        <li>Read the road network from a "city_map.txt" file: This file contains information about the city's road network, including distances between buildings.</li> 
-                        <li>Initialize distances to all other nodes from the source as infinity.</li>
-                        <li>Mark the source node as visited.</li>
-                    </ul>
-                </li>
-                <li>Find Minimum Distance:
-                    <ul>
-                        <li>Select the unvisited node with the smallest distance from the source.</li>
-                    </ul>
-                </li>
-                <li>Update Distances: 
-                    <ul>
-                        <li>For each unvisited neighbor of the selected node:</li>
-                        <li>Calculate the tentative distance through the selected node.</li>
-                        <li>If the tentative distance is smaller than the current distance, update the distance and parent node.</li>
-                    </ul>
-                </li>
-                <li>Repeat: 
-                    <ul>
-                        <li>Repeat steps 2 and 3 until all nodes are visited.</li>
-                    </ul>
-                </li>
-            </ol>
-        </p>
-        <p>This iterative process efficiently finds the shortest paths from the source node to all other nodes in the network.</p>
-    </div>
-
-    <div class="content">
-        <h2>Technological Tools Required for Traffic Management</h2>
+        <div class="back-arrow">
+            <a href="index.html"><i>&larr;</i> Back to Home</a>
+        </div>
+        
+        <div class="content">
+            <h2>Why Addressing Congestion Prediction Is Necessary</h2>
+            <p>Congestion prediction plays a vital role in making smart cities more livable and efficient. By anticipating traffic jams before they happen, city planners and traffic systems can take proactive steps to keep things moving smoothly. Using advanced tools like machine learning and real-time data analysis, these predictions help commuters save time, reduce stress, and find better routes. They also contribute to a cleaner environment by cutting down on emissions caused by idling vehicles. In the bigger picture, congestion prediction paves the way for smarter transportation solutions, like self-driving cars and connected systems, making cities ready for the future.</p>
+        </div>
+    
+        <div class="content">
+            <h2>Problems Arising Without Efficiect Congetsion Prediction</h2>
+            <ul>
+                <li><strong>Traffic Congestion:</strong> It wastes valuable time for commuters, delays the transport of goods, and leads to higher fuel consumption, economic losses, and increased carbon emissions.</li>
+                <li><strong>Higher Accident Rates:</strong> Poor traffic management makes accidents more likely to happen, especially at busy intersections or during rush hours.</li>
+                <li><strong>Emergency Delays:</strong> Emergency response times for ambulances, fire trucks, and police are affected when they get stuck in traffic.</li>
+                <li><strong>Environmental Impact:</strong> Congestion means more emissions from vehicles, which worsens air pollution and contributes to climate change.</li>
+                <li><strong>Reduced Urban Livability:</strong> Persistent traffic problems make a city less appealing to live, work, or invest in.</li>
+            </ul>
+        </div>
+    
+        <div class="content">
+            <h2>Other Problems Solved If Addressed</h2>
+            <ul>
+                <li><strong>Pollution Control:</strong> Reduced idle times result in lower emissions of CO₂, NOx, and particulate matter.</li>
+                <li><strong>Fuel Efficiency:</strong> Optimized traffic flow improves fuel consumption by reducing stop-and-go driving.</li>
+                <li><strong>Urban Planning:</strong> Real-time traffic data can inform the design of better roads, parking spaces, and public transport integration.</li>
+                <li><strong>Improved Public Transport Usage:</strong>Congetsion management leads to delay of buses, trains, and trams, encouraging the use of public transportation.</li>
+                <li><strong>Smart City Integration:</strong> Traffic management systems can be integrated with other smart city features like smart parking, IoT-enabled streetlights, and predictive policing.</li>
+            </ul>
+        </div>
+    
+        <div class="content">
+            <h2>Algorithms to Congetsion Prediction</h2>
+            <p>Several advanced algorithms can optimize Congestion Prediction, and each has distinct applications. These include:</p>
+            <ul>
+                <li><strong>Dijsktra's Algorithm</strong></li>
+                <li><strong>Efficiency Analysis (Time and Space Complexities)</strong></li>
+                <li><strong>Optimization and NP-Hard Problems</strong></li>
+                <li><strong>Sorting Algorithms (QuickSort, MergeSort, HeapSort)</strong></li>
+            </ul>
+        </div>
+    
+        <div class="content">
+            <h2>Dijkstra’s Algorithm in Conjestion Prediction</h2>
+            <p>Dijkstra’s Algorithm is an essential tool used to find the shortest path between nodes in a graph, which can represent intersections and roads in a city’s traffic network. It calculates the most efficient route for vehicles to minimize travel time and traffic congestion, adapting dynamically based on real-time conditions such as traffic volume, accidents, or road closures.</p>
+    
+            <h3>Applications of Dijkstra’s Algorithm in Congetsion Prediction</h3>
+    
+            <div class="section-title">1. Real-Time Route Optimization for Vehicles</div>
+            <p><strong>Purpose:</strong> Help drivers find the most efficient route to their destination.</p>
+            <p><strong>How it Works:</strong></p>
+            <ul>
+                <li>Dijkstra's algorithm can be used to find the shortest path for vehicles in real-time, considering current traffic conditions. By dynamically adjusting the edge weights (e.g., travel times or congestion levels) based on real-time data, Dijkstra's algorithm can recommend optimal routes to avoid congested areas.</li>
+                <li><strong>Exmple:</strong> If there's an accident or traffic jam on a particular road, Dijkstra’s algorithm can find an alternate route with the least congestion.</li>
+            </ul>
+            <p><strong>Advantages:</strong> Reduces travel time, lowers traffic congestion, and improves overall traffic flow.</p>
+    
+            <div class="section-title">2.Traffic Flow Prediction and Simulation</div>
+            <p><strong>Purpose:</strong> Forecast the areas that are likely to become congested and calculate the optimial routes before the congestion peaks</p>
+            <p><strong>How it Works:</strong></p>
+            <ul>
+                <li>Dijkstra’s algorithm can be integrated with predictive models to forecast future congestion levels. By analyzing historical traffic data and using machine learning techniques to predict future congestion, Dijkstra’s algorithm can adjust road segment weights to simulate how congestion will evolve over time.</li>
+                <li><strong>Example:</strong>By using traffic prediction models, the algorithm can forecast areas likely to become congested and calculate the optimal routes before the congestion peaks.</li>
+            </ul>
+        
+            <div class="section-title">3.Adaptive Traffic Signal Control</div>
+            <p><strong>Purpose:</strong> Optimize traffic light timings to ensure smooth flow at intersections.</p>
+            <p><strong>How it Works:</strong></p>
+            <ul>
+                <li>Dijkstra’s algorithm can help optimize traffic signal timings based on real-time traffic data. By calculating the shortest path for vehicles, the algorithm can adjust traffic light cycles to reduce waiting times and improve traffic flow in congested areas</li>
+                <li><strong>Example:</strong>In a busy intersection, if traffic is detected to be heavy in a specific direction, Dijkstra’s algorithm can suggest adjustments to the signal timing to prioritize the flow of traffic on that path.</li>
+            </ul>
+        </div>
+    
+        <div class="content">
+            <h2>How Dijkstra's Algorithm Works (Code Example)</h2>
+            <p>
+                The provided C++ code implements Dijkstra's algorithm to find the shortest paths between buildings in a city.
+    
+                <div class="problem-space">
+                <a href="https://github.com/RaghavendraRaoK49/portfolioRaghu.git.io/blob/main/C%2B%2B.cpp" target="_blank">View the code here</a>. 
+                </div>
+            
+            </p>
+            <p>
+                <strong>Key Steps:</strong>
+                <ol>
+                    <li>Initialization:
+                        <ul>
+                            <li>Read the road network from a "city_map.txt" file: This file contains information about the city's road network, including distances between buildings.</li> 
+                            <li>Initialize distances to all other nodes from the source as infinity.</li>
+                            <li>Mark the source node as visited.</li>
+                        </ul>
+                    </li>
+                    <li>Find Minimum Distance:
+                        <ul>
+                            <li>Select the unvisited node with the smallest distance from the source.</li>
+                        </ul>
+                    </li>
+                    <li>Update Distances: 
+                        <ul>
+                            <li>For each unvisited neighbor of the selected node:</li>
+                            <li>Calculate the tentative distance through the selected node.</li>
+                            <li>If the tentative distance is smaller than the current distance, update the distance and parent node.</li>
+                        </ul>
+                    </li>
+                    <li>Repeat: 
+                        <ul>
+                            <li>Repeat steps 2 and 3 until all nodes are visited.</li>
+                        </ul>
+                    </li>
+                </ol>
+            </p>
+            <p>This iterative process efficiently finds the shortest paths from the source node to all other nodes in the network.</p>
+        </div>
+    
+        <div class="content">
+            <h2>Technological Tools Required for Traffic Management</h2>
+            <ul>
+                <li><strong>Hardware:</strong> Traffic cameras, IoT sensors, GPS devices, and edge computing units.</li>
+                <li><strong>Software:</strong> Real-time data processing systems, AI algorithms for prediction, visualization dashboards for traffic authorities.</li>
+                <li><strong>Integration Platforms:</strong> Cloud-based platforms to aggregate and optimize traffic data dynamically.</li>
+            </ul>
+        </div>
+    
+        <div class="content">
+            <h2>Other Alternatives and Enhancements to Traffic Management</h2>
+            <p>While Dijkstra’s algorithm is highly effective, it can be enhanced or complemented by other techniques:</p>
+            <ul>
+                <li><strong>Physical Infrastructure Enhancements:</strong> Build flyovers, bypass roads, and dedicated lanes for public transport and emergency vehicles to reduce bottlenecks.</li>
+                <li><strong>IoT-Based Smart Traffic Lights:</strong> Sensors detect vehicle density and adjust signal timing dynamically based on real-time traffic flow.</li>
+                <li><strong>Adaptive Traffic Control Systems (ATCS):</strong> Uses AI, cameras, and sensors to continuously adjust traffic lights in response to traffic conditions.</li>
+                <li><strong>Vehicle-to-Infrastructure (V2I) Communication:</strong> Vehicles communicate with traffic infrastructure to optimize their route and adjust signals in real-time.</li>
+                <li><strong>Congestion Pricing:</strong> Charge higher tolls during peak traffic hours to encourage drivers to avoid congested zones.</li>
+                <li><strong>Data Analytics and Predictive Modeling:</strong> Use historical and real-time data to predict congestion patterns and inform traffic management decisions.</li>
+            </ul>
+        </div>
+        <div class="content">
+            <h3>Data Collection and Adaptation</h3>
+        <p>Dijsktra's algorithm alone cannot collect the data and adapt to it. It requires some advanced tools and technologies.</p>
         <ul>
-            <li><strong>Hardware:</strong> Traffic cameras, IoT sensors, GPS devices, and edge computing units.</li>
-            <li><strong>Software:</strong> Real-time data processing systems, AI algorithms for prediction, visualization dashboards for traffic authorities.</li>
-            <li><strong>Integration Platforms:</strong> Cloud-based platforms to aggregate and optimize traffic data dynamically.</li>
+            <li>Data is gathered using sensors, cameras, GPS devices, and smart infrastructure that monitor traffic flow, congestion, and road conditions in real-time.</li>
+            <li>This information is sent to central systems or cloud platforms, where it’s constantly updated and analyzed.</li>
+            <li>The algorithm then adjusts traffic routes and signals based on the most current data, ensuring traffic management remains efficient and responsive.</li>
+            <li>The system quickly communicates with navigation apps and traffic lights, instantly implementing changes to keep traffic moving smoothly across the network.</li>
         </ul>
-    </div>
-
-    <div class="content">
-        <h2>Other Alternatives and Enhancements to Traffic Management</h2>
-        <p>While Dijkstra’s algorithm is highly effective, it can be enhanced or complemented by other techniques:</p>
-        <ul>
-            <li><strong>Physical Infrastructure Enhancements:</strong> Build flyovers, bypass roads, and dedicated lanes for public transport and emergency vehicles to reduce bottlenecks.</li>
-            <li><strong>IoT-Based Smart Traffic Lights:</strong> Sensors detect vehicle density and adjust signal timing dynamically based on real-time traffic flow.</li>
-            <li><strong>Adaptive Traffic Control Systems (ATCS):</strong> Uses AI, cameras, and sensors to continuously adjust traffic lights in response to traffic conditions.</li>
-            <li><strong>Vehicle-to-Infrastructure (V2I) Communication:</strong> Vehicles communicate with traffic infrastructure to optimize their route and adjust signals in real-time.</li>
-            <li><strong>Congestion Pricing:</strong> Charge higher tolls during peak traffic hours to encourage drivers to avoid congested zones.</li>
-            <li><strong>Data Analytics and Predictive Modeling:</strong> Use historical and real-time data to predict congestion patterns and inform traffic management decisions.</li>
-        </ul>
-    </div>
-    <div class="content">
-        <h3>Data Collection and Adaptation</h3>
-    <p>Dijsktra's algorithm alone cannot collect the data and adapt to it. It requires some advanced tools and technologies.</p>
-    <ul>
-        <li>Data is gathered using sensors, cameras, GPS devices, and smart infrastructure that monitor traffic flow, congestion, and road conditions in real-time.</li>
-        <li>This information is sent to central systems or cloud platforms, where it’s constantly updated and analyzed.</li>
-        <li>The algorithm then adjusts traffic routes and signals based on the most current data, ensuring traffic management remains efficient and responsive.</li>
-        <li>The system quickly communicates with navigation apps and traffic lights, instantly implementing changes to keep traffic moving smoothly across the network.</li>
-    </ul>
-    </div>
-
-    <div class="content">
-        <h2>Conclusion</h2>
-        <li>An efficient congestion prediction system is essential for the smart city <strong>City of Dreams</strong> driving its vision of sustainability, livability, and economic prosperity. By integrating Dijkstra’s Algorithm with real-time traffic data, Ohara can predict congestion patterns accurately, optimize traffic routing, and enhance overall mobility. This approach not only minimizes travel times but also boosts fuel efficiency, reduces emissions, and enhances the quality of life for its citizens.
-            Moreover, by combining Dijkstra’s Algorithm with advanced solutions like Machine Learning, Ant Colony Optimization, and Graph Neural Networks, Ohara can create a dynamic and adaptable congestion prediction system. This robust, data-driven approach will ensure smoother traffic flow, reduce congestion, and support a sustainable urban environment, ultimately contributing to the city's future-proof infrastructure and long-term success.</li>
-    </div>
-
-</body>
-</html>
+        </div>
+    
+        <div class="content">
+            <h2>Conclusion</h2>
+            <li>An efficient congestion prediction system is essential for the smart city <strong>City of Dreams</strong> driving its vision of sustainability, livability, and economic prosperity. By integrating Dijkstra’s Algorithm with real-time traffic data, Ohara can predict congestion patterns accurately, optimize traffic routing, and enhance overall mobility. This approach not only minimizes travel times but also boosts fuel efficiency, reduces emissions, and enhances the quality of life for its citizens.
+                Moreover, by combining Dijkstra’s Algorithm with advanced solutions like Machine Learning, Ant Colony Optimization, and Graph Neural Networks, Ohara can create a dynamic and adaptable congestion prediction system. This robust, data-driven approach will ensure smoother traffic flow, reduce congestion, and support a sustainable urban environment, ultimately contributing to the city's future-proof infrastructure and long-term success.</li>
+        </div>
+    
+    </body>
+    </html>
