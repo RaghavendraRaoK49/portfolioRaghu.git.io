@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ohara: The City of Dreams</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        /* Body Styling */
+        body {
+            background: linear-gradient(to bottom, #5b98d5, #0d2c62);
+            color: #efe8e8;
+            line-height: 1.6;
+            font-size: 18px;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Header */
+        header {
+            background: rgba(42, 59, 143, 0.8);
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px solid #4c4c52;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            color: #dde2e2;
+        }
+
+        header nav {
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        header nav a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1rem;
+            transition: color 0.3s;
+        }
+
+        header nav a:hover {
+            color: #2b3be9;
+        }
+
+        /* Main Section */
+        main {
+            padding: 2rem;
+        }
+
+        /* Section Styling */
+        section {
+            margin: 2rem 0;
+            padding: 2rem;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        section h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            color: #ebebf4;
+        }
+
+        /* Team Grid */
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+        }
+
+        .team-member {
+            background: rgba(238, 236, 236, 0.8);
+            padding: 1rem;
+            border-radius: 10px;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .team-member:hover {
+            transform: translateY(-10px);
+            background: rgba(0, 0, 0, 0.9);
+        }
+
+        .team-member h4 {
+            font-size: 1.5rem;
+            color: #138dd3;
+            margin-bottom: 0.5rem;
+        }
+
+        .team-member p {
+            font-size: 1rem;
+            color: #1c1a1a;
+        }
+
+        /* Problem Space Link */
+        section a {
+            display: inline-block;
+            margin-top: 1rem;
+            padding: 0.5rem 1rem;
+            background: #32749e;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+
+        section a:hover {
+            background: #1e88e5;
+        }
+
+        /* Ordered and Unordered Lists */
+        ol,
+        ul {
+            padding-left: 1.5rem;
+        }
+
+        li {
+            margin-bottom: 0.5rem;
+        }
+
+        /* Reflection Subheaders */
+        h3 {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+            color: #4fc3f7;
+        }
+
+        /* Footer (if needed) */
+        footer {
+            text-align: center;
+            padding: 1rem 0;
+            background: rgba(0, 0, 0, 0.8);
+            color: #fff;
+            font-size: 0.9rem;
+            border-top: 2px solid #edf5f9;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Ohara: City of Dreams</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="traffic.html">Traffic Management</a>
+            <a href="reflection.html">Reflections</a>
+        </nav>
+    </header>
+    <main>
+
+        <section>
+            <h2>Team Members</h2>
+            <div class="team-grid">
+                <div class="team-member">
+                    <div class="team-member-content">
+                        <h4>Ragahavendra Rao K</h4>
+                        <p>USN: 01FE23BCS073</p>
+                        <p>Role: Traffic Congestion and Routing Specialist</p>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <div class="team-member-content">
+                        <h4>Akshay</h4>
+                        <p>USN: 01FE23BCS099</p>
+                        <p>Role: Emergency Vehicle Routing Lead</p>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <div class="team-member-content">
+                        <h4>K Rohidas S</h4>
+                        <p>USN: 01FE23BCS240</p>
+                        <p>Role: Data Analysis and Algorithm Specialist</p>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <div class="team-member-content">
+                        <h4>Sanath Kumar</h4>
+                        <p>USN: 01FE23BCS0</p>
+                        <p>Role: Project Coordinator and Algorithm Designer</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="problem-space">
+            <h2>Problem Space and How It Was Arrived At</h2>
+            <p><b>Ohara: City of Dreams</b> aims to resolve key urban challenges by integrating efficient traffic management and sustainable development solutions. By analyzing real-world urban dynamics and referencing advanced algorithmic solutions, the project tackles congestion and routing for emergency vehicles effectively.</p>
+            <p>We identified the need to address traffic congestion as a critical challenge to ensure smooth transportation and safety for all residents. Emergency vehicle routing was prioritized to reduce delays during critical situations, ensuring lives can be saved through better planning and implementation.</p>
+            <br>
+            <a href="city/city.html">Click here to view complete information about the city design</a>
+        </section>
+
+        <section>
+            <h2>Key Insights from Research</h2>
+
+            <h3>Urban Dynamics</h3>
+            <p>Inspired by case studies on urban street dynamics, Ohara emphasizes public spaces that foster community interactions and sustainable living. Key focus areas include integrating greenery and optimizing urban layouts for better connectivity.</p>
+
+            <h3>Traffic Management</h3>
+            <p>Analyzing global traffic management models, Ohara will employ real-time monitoring systems, adaptive signal control, and optimized routing to reduce congestion and commute times.</p>
+
+            <h3>Emergency Routing</h3>
+            <p>Drawing from emergency management frameworks, Ohara introduces prioritized routing algorithms for emergency vehicles. This ensures minimal delays in critical situations, potentially saving lives and improving safety standards.</p>
+
+            <h3>Technology Integration</h3>
+            <p>The project incorporates smart solutions such as IoT-enabled traffic lights and AI-driven congestion analysis to enhance overall efficiency and adaptability.</p>
+        </section>
+
+        <section>
+            <h2>Reflection on City Design</h2>
+
+            <p>The design of <i><b>Ohara</b></i> focuses on providing sustainable and smart solutions. The following areas were identified as primary objectives:</p>
+
+            <ol>
+                <li><b>Traffic Management:</b> Implementing algorithms to monitor, predict, and reduce congestion in real time.</li>
+                <li><b>Emergency Vehicle Routing:</b> Prioritized and dynamic routing to ensure timely access for emergency services.</li>
+                <li><b>Community Living:</b> Creating eco-friendly residential spaces with integrated parks and public utilities.</li>
+                <li><b>Technology-Driven Solutions:</b> Using AI and IoT for smarter, adaptive urban planning.</li>
+            </ol>
+        </section>
+
+        <section>
+            <h2>Problem Definition</h2>
+            <p>The Ohara project focuses on alleviating urban traffic challenges and enhancing emergency response systems. By applying advanced algorithms and leveraging technology, Ohara aims to create a seamless urban environment where both human-centered design and technological advancements thrive.</p>
+        </section>
+    </main>
+</body>
+
+</html>
